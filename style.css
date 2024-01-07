@@ -25,3 +25,10 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.circle-image {
+    width: 200px; /* Set your desired width */
+    height: 200px; /* Set your desired height */
+    border-radius: 50%; /* Create a circle by setting border-radius to 50% */
+    overflow: hidden; /* Ensure the image stays within the rounded boundaries */
+}
