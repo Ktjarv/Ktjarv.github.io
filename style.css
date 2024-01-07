@@ -7,12 +7,15 @@ body {
 }
 
 header {
-    text-align: center;
-    padding: 20px;
+    background-color: #A020F0; /* Set the background color to purple */
+    color: white; /* Set the text color to white or any contrasting color */
+    padding: 10px; /* Adjust padding as needed */
+    text-align: center; /* Center-align the text */
 }
 
 main {
-    padding: 20px;
+    text-align: center;
+    padding: 10px;
 }
 
 footer {
