@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<!--
+    Keagan Jarvie
+    about.html
+    04/13/2026
+-->
+
+<html lang="en">
+
+<head>
+    <title>About Me | Keagan Jarvie</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<header class="mobile-header">
+    <figure>
+        <img class="profile-img"
+             src="images/1000009934.jpg"
+             alt="Photo of Keagan Jarvie">
+        <figcaption>Making things no one asked for becauses it fun!.</figcaption>
+    </figure>
+    <h1>Keagan Jarvie</h1>
+    <h2>Information Technology Major</h2>
+</header>
+
+<nav class="mobile-nav">
+    <button class="hamburger-btn" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
+    <div id="nav-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Hobbies</a></li>
+            <li><a href="education.html">Education</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="mobile-main">
+
+    <section>
+        <h2 class="section-heading">About Me</h2>
+        <p>
+            I am an Information Technology student with a strong interest
+            in software development and hardware systems.
+        </p>
+    </section>
+
+    <section>
+        <h2 class="section-heading">Technical Skills</h2>
+        <div class="skills-grid">
+
+            <article class="skill-card">
+                <h3>Python</h3>
+                <p>Scripting, automation, data processing, and hardware interfacing via MicroPython.</p>
+            </article>
+
+            <article class="skill-card">
+                <h3>Java</h3>
+                <p>Object-oriented programming, data structures, and application development.</p>
+            </article>
+
+            <article class="skill-card">
+                <h3>C++</h3>
+                <p>Systems programming and low-level hardware control.</p>
+            </article>
+
+            <article class="skill-card">
+                <h3>MicroPython</h3>
+                <p>Embedded systems and microcontroller programming for IoT projects.</p>
+            </article>
+
+            <article class="skill-card">
+                <h3>SQL</h3>
+                <p>Database design, querying, and data management.</p>
+            </article>
+
+        </div>
+    </section>
+
+   <!-- Skills proficiency table: hidden on mobile, shown on tablet/desktop -->
+    <section class="table-section">
+        <h2 class="section-heading">Skill Proficiency Overview</h2>
+        <table class="skills-table">
+            <caption>Technical Skills, Experience Level, and Primary Use Cases</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Skill</th>
+                    <th scope="col">Years of Experience</th>
+                    <th scope="col">Primary Use Case</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Python</td>
+                    <td>5</td>
+                    <td>Scripting, Automation, IoT</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>5</td>
+                    <td>Applications</td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>1</td>
+                    <td>Systems Programming, Hardware Control</td>
+                </tr>
+                <tr>
+                    <td>MicroPython</td>
+                    <td>2</td>
+                    <td>Embedded Systems, Microcontrollers</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td>1</td>
+                    <td>Database Design, Data Querying</td>
+                </tr>
+                <tr>
+                    <td>Linux</td>
+                    <td>4</td>
+                    <td>Command Line, Servers</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <ul class="skills-list-mobile">
+            <li><strong>Python</strong> — Intermediate · 5 yrs · Scripting, Automation, IoT</li>
+            <li><strong>Java</strong> — Intermediate · 5 yrs · Applications</li>
+            <li><strong>C++</strong> — Beginner · 1 yr · Systems Programming, Hardware Control</li>
+            <li><strong>MicroPython</strong> — Intermediate · 2 yrs · Embedded Systems, Microcontrollers</li>
+            <li><strong>SQL</strong> — Beginner · 1 yr · Database Design, Data Querying</li>
+            <li><strong>Linux</strong> — Beginner · 4 yrs · Command Line, Servers</li>
+        </ul>
+    </section>
+
+    <aside>
+        <p>
+            <strong>Currently seeking:</strong> IT internships and co-op positions
+            in anything I can get.
+        </p>
+    </aside>
+
+    <p>&#58;&#41;</p>
+
+    <audio controls>
+        <source src="media/music.mp3" type="audio/mpeg">
+        <source src="media/music.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+</main>
+
+<footer>
+    <p>
+        Email: <a href="mailto:jarvieke@mail.gvsu.edu">jarvieke@mail.gvsu.edu</a>
+    </p>
+</footer>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>

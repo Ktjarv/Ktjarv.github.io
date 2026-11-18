@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<!--
+    Keagan Jarvie
+    contact.html
+    04/13/2026
+-->
+
+<html lang="en">
+
+<head>
+    <title>Contact | Keagan Jarvie</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<header class="mobile-header">
+    <figure>
+        <img class="profile-img"
+             src="images/1000009934.jpg"
+             alt="Photo of Keagan Jarvie">
+        <figcaption>Making things no one asked for because it's fun!</figcaption>
+    </figure>
+    <h1>Keagan Jarvie</h1>
+    <h2>Information Technology Major</h2>
+</header>
+
+<nav class="mobile-nav">
+    <button class="hamburger-btn" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
+    <div id="nav-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Hobbies</a></li>
+            <li><a href="education.html">Education</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="mobile-main">
+    <section>
+        <h2 class="section-heading">Contact</h2>
+        <p>Email: <a href="mailto:jarvieke@mail.gvsu.edu">jarvieke@mail.gvsu.edu</a></p>
+        <p>University: Grand Valley State University</p>
+
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.044284324735!2d-85.8890404!3d42.9641221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8819a31f0c9d398f%3A0xea0367b3e0ec32fa!2sGrand%20Valley%20State%20University!5e1!3m2!1sen!2sus!4v1770075858535!5m2!1sen!2sus"
+            allowfullscreen
+            loading="lazy"
+            title="Map of Grand Valley State University">
+        </iframe>
+    </section>
+
+    <!-- Collaboration / Project Inquiry Form -->
+    <section>
+        <h2 class="section-heading">Project Inquiry</h2>
+        <p class="form-intro">Want to work together? Reach out!!!</p>
+
+        <div class="inquiry-form">
+
+            <div class="form-group">
+                <label for="full-name">Your Name</label>
+                <input type="text"
+                       id="full-name"
+                       name="full-name"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="email-addr">Email Address</label>
+                <input type="email"
+                       id="email-addr"
+                       name="email-addr"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="project-type">Project Type</label>
+                <select id="project-type" name="project-type">
+                    <option value="">Select a category</option>
+                    <option value="web">Web Development</option>
+                    <option value="embedded">Embedded / IoT</option>
+                    <option value="automation">Scripting / Automation</option>
+                    <option value="database">Database Work</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="timeline">Estimated Timeline</label>
+                <input type="text"
+                       id="timeline"
+                       name="timeline">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Project Description</label>
+                <textarea id="message"
+                          name="message"
+                          rows="5"
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Send Inquiry</button>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>
+        Email: <a href="mailto:jarvieke@mail.gvsu.edu">jarvieke@mail.gvsu.edu</a>
+    </p>
+    <p>&copy; 2026 All Rights Reserved.</p>
+    <p>Personal Portfolio Website</p>
+</footer>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>

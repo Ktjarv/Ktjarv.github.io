@@ -1,0 +1,615 @@
+/*
+    Keagan Jarvie
+    style.css
+    04/13/2026
+*/
+
+body, header, nav, main, footer, h1, h2, h3, p, ul, li, img, div, article, section, aside, figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Francois One", sans-serif;
+}
+
+body {
+    font-family: "Francois One", sans-serif;
+    background-color: #111;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #00ffff;
+}
+
+a:hover {
+    color: #ffcc00;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #000;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    text-shadow: 0 0 12px rgba(0, 255, 255, 0.6), 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+header h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+figure {
+    display: inline-block;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.95rem;
+    color: #00ffff;
+    margin-top: 0.4rem;
+    font-style: italic;
+    letter-spacing: 0.03em;
+}
+
+nav {
+    background-color: #222;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    padding: 1rem 0;
+}
+
+article {
+    padding: 1rem 0;
+}
+
+aside {
+    padding: 1rem;
+    background-color: #1a1a1a;
+    border-left: 3px solid #00ffff;
+    margin: 1rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+.mobile-header {
+    padding: 1rem;
+}
+
+.profile-img {
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.4), 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Hamburger button — mobile only */
+.hamburger-btn {
+    display: block;
+    background: none;
+    border: none;
+    color: #00ffff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    text-align: right;
+    width: 100%;
+}
+
+.hamburger-btn:hover {
+    color: #ffcc00;
+}
+
+/* Nav links hidden by default on mobile */
+#nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 0.5rem;
+}
+
+#nav-links.open {
+    display: flex;
+}
+
+.mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+}
+
+.mobile-nav li {
+    display: block;
+    margin: 0.4rem 0;
+}
+
+.mobile-main {
+    padding: 1rem 1.25rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.map {
+    width: 100%;
+    height: 250px;
+    border: 0;
+}
+
+p, li {
+    word-wrap: break-word;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skill-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 255, 255, 0.2), 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.skill-card h3 {
+    color: #00ffff;
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-top: 1rem;
+}
+
+.edu-card {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 1.25rem;
+    border-top: 3px solid #00ffff;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+}
+
+.edu-card h3 {
+    font-size: 1.1rem;
+    color: #ffcc00;
+    margin-bottom: 0.25rem;
+}
+
+.edu-card .institution {
+    color: #00ffff;
+    font-size: 0.95rem;
+}
+
+.edu-card .edu-date {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-bottom: 0.5rem;
+}
+
+.section-heading {
+    font-size: 1.4rem;
+    color: #00ffff;
+    border-bottom: 1px solid #333;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
+}
+
+@media screen and (min-width: 600px) {
+
+    body {
+        background: linear-gradient(to right, #111, #1f1f1f);
+    }
+
+    .hamburger-btn {
+        display: none;
+    }
+
+    #nav-links {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 0;
+    }
+
+    .mobile-nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .mobile-nav li {
+        margin: 0 1rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header h2 {
+        font-size: 1.4rem;
+    }
+
+    .map {
+        height: 350px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .education-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    .mobile-header {
+        padding: 2rem;
+    }
+
+    .mobile-nav ul {
+        justify-content: space-evenly;
+    }
+
+    .mobile-main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    nav a:hover {
+        background-color: #00ffff;
+        color: #000;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .education-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    body {
+        font-size: 1.1rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .mobile-main {
+        max-width: 1200px;
+    }
+
+    nav ul {
+        padding: 1.5rem 0;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .education-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media print {
+
+    body {
+        background: #fff;
+        color: #000;
+    }
+
+    nav, footer {
+        display: none;
+    }
+
+    img {
+        display: none;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+}
+
+/* =============================================
+   TABLE STYLES — Added for Assignment Part 1
+   ============================================= */
+
+/* Mobile: hide the table, show the list instead */
+.table-section {
+    margin-top: 1.5rem;
+}
+
+.skills-table {
+    display: none;
+}
+
+/* Mobile list shown in place of the table */
+.skills-list-mobile {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.75rem;
+}
+
+.skills-list-mobile li {
+    background-color: #1a1a1a;
+    border-left: 3px solid #00ffff;
+    border-radius: 0 6px 6px 0;
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.skills-list-mobile li strong {
+    color: #00ffff;
+}
+
+/* =============================================
+   FORM STYLES — Added for Assignment Part 1
+   ============================================= */
+
+.form-intro {
+    margin-bottom: 1rem;
+    color: #bbb;
+    font-size: 0.95rem;
+}
+
+/* Form container — stacks vertically on mobile */
+.inquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: #00ffff;
+    letter-spacing: 0.03em;
+}
+
+/* Input, select, and textarea base styles */
+.inquiry-form input[type="text"],
+.inquiry-form input[type="email"],
+.inquiry-form select,
+.inquiry-form textarea {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: #fff;
+    font-family: "Francois One", sans-serif;
+    font-size: 0.95rem;
+    padding: 0.6rem 0.85rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.inquiry-form input[type="text"]:focus,
+.inquiry-form input[type="email"]:focus,
+.inquiry-form select:focus,
+.inquiry-form textarea:focus {
+    outline: none;
+    border-color: #00ffff;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.25);
+}
+
+/* Placeholder text color */
+.inquiry-form input::placeholder,
+.inquiry-form textarea::placeholder {
+    color: #555;
+}
+
+/* Checkbox row layout */
+.form-check {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.form-check input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #00ffff;
+    cursor: pointer;
+}
+
+.form-check label {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* Submit button */
+.submit-btn {
+    background-color: #00ffff;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "Francois One", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    padding: 0.7rem 1.5rem;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    align-self: flex-start;
+}
+
+.submit-btn:hover {
+    background-color: #ffcc00;
+    box-shadow: 0 4px 14px rgba(255, 204, 0, 0.35);
+}
+
+/* =============================================
+   TABLET VIEWPORT (min-width: 600px)
+   Table and Form updates
+   ============================================= */
+@media screen and (min-width: 600px) {
+
+    /* Show the table, hide the mobile list */
+    .skills-table {
+        display: table;
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .skills-list-mobile {
+        display: none;
+    }
+
+    /* Table caption */
+    .skills-table caption {
+        caption-side: top;
+        color: #aaa;
+        font-size: 0.85rem;
+        font-style: italic;
+        margin-bottom: 0.5rem;
+        text-align: left;
+        padding-bottom: 0.4rem;
+    }
+
+    /* Table header cells */
+    .skills-table th {
+        background-color: #111;
+        color: #00ffff;
+        font-size: 0.85rem;
+        letter-spacing: 0.06em;
+        padding: 0.65rem 1rem;
+        text-align: left;
+        text-transform: uppercase;
+        border-bottom: 2px solid #00ffff;
+    }
+
+    /* Table data cells */
+    .skills-table td {
+        background-color: #1a1a1a;
+        border-bottom: 1px solid #2a2a2a;
+        color: #ddd;
+        padding: 0.6rem 1rem;
+        vertical-align: middle;
+    }
+
+    /* Alternating row shading */
+    .skills-table tbody tr:nth-child(even) td {
+        background-color: #161616;
+    }
+
+    .skills-table tbody tr:hover td {
+        background-color: #222;
+        color: #fff;
+    }
+
+    /* Form: two-column grid on tablet */
+    .inquiry-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    /* Full-width elements inside the grid */
+    .form-group:has(textarea),
+    .form-group:has(.submit-btn),
+    .form-check {
+        grid-column: 1 / -1;
+    }
+}
+
+/* =============================================
+   DESKTOP VIEWPORT (min-width: 900px)
+   Table and Form updates
+   ============================================= */
+@media screen and (min-width: 900px) {
+
+    .skills-table {
+        font-size: 1rem;
+    }
+
+    .skills-table th,
+    .skills-table td {
+        padding: 0.75rem 1.25rem;
+    }
+
+    /* Wider form with larger inputs on desktop */
+    .inquiry-form input[type="text"],
+    .inquiry-form input[type="email"],
+    .inquiry-form select,
+    .inquiry-form textarea {
+        font-size: 1rem;
+        padding: 0.7rem 1rem;
+    }
+
+    .submit-btn {
+        padding: 0.75rem 2rem;
+        font-size: 1.05rem;
+    }
+}

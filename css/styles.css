@@ -1,0 +1,230 @@
+/*
+    Keagan Jarvie
+    styles.css
+    04/22/2026
+*/
+
+:root {
+  --cyan: #00ffff;
+  --gold: #ffcc00;
+  --dark-bg: #111111;
+  --card-bg: #1a1a1a;
+  --border-color: #2a2a2a;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: #ffffff;
+  font-family: "Francois One", sans-serif;
+}
+
+/* ── Navbar ── */
+.navbar {
+  background-color: #000 !important;
+  border-bottom: 1px solid #222;
+}
+
+.navbar-brand {
+  color: var(--cyan) !important;
+  font-size: 1.2rem;
+  letter-spacing: 0.04em;
+}
+
+.nav-link {
+  color: #ccc !important;
+  transition: color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--gold) !important;
+}
+
+.navbar-toggler {
+  border-color: var(--cyan);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2300ffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ── Hero / Jumbotron replacement ── */
+.hero {
+  background: linear-gradient(135deg, #000 0%, #0d1a1a 60%, #111 100%);
+  border-bottom: 2px solid #1a1a1a;
+  padding: 5rem 1.5rem 4rem;
+  margin-top: 56px;
+  text-align: center;
+}
+
+.hero .profile-img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.45), 0 4px 20px rgba(0, 0, 0, 0.8);
+  margin-bottom: 1.25rem;
+}
+
+.hero h1 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  text-shadow: 0 0 18px rgba(0, 255, 255, 0.5);
+  margin-bottom: 0.4rem;
+}
+
+.hero .subtitle {
+  color: var(--cyan);
+  font-size: 1.15rem;
+  margin-bottom: 0.6rem;
+}
+
+.hero .tagline {
+  color: #aaa;
+  font-size: 0.95rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.btn-hero {
+  background-color: var(--cyan);
+  color: #000;
+  font-family: "Francois One", sans-serif;
+  letter-spacing: 0.06em;
+  border: none;
+  padding: 0.65rem 1.8rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.btn-hero:hover {
+  background-color: var(--gold);
+  box-shadow: 0 4px 18px rgba(255, 204, 0, 0.4);
+  color: #000;
+}
+
+/* ── Section headings ── */
+.section-heading {
+  color: var(--cyan);
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
+}
+
+/* ── Feature cards ── */
+.feature-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-top: 3px solid var(--cyan);
+  border-radius: 8px;
+  padding: 1.5rem 1.25rem;
+  height: 100%;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 255, 255, 0.18);
+}
+
+.feature-card h3 {
+  color: var(--gold);
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* ── Skills badges ── */
+.skill-badge {
+  display: inline-block;
+  background-color: #111;
+  border: 1px solid var(--cyan);
+  color: var(--cyan);
+  border-radius: 20px;
+  padding: 0.3rem 0.85rem;
+  font-size: 0.85rem;
+  margin: 0.25rem;
+  letter-spacing: 0.04em;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.skill-badge:hover {
+  background-color: var(--cyan);
+  color: #000;
+}
+
+/* ── About strip ── */
+.about-strip {
+  background-color: var(--card-bg);
+  border-left: 4px solid var(--cyan);
+  border-radius: 0 8px 8px 0;
+  padding: 1.25rem 1.5rem;
+}
+
+/* ── Footer ── */
+footer {
+  background-color: #000;
+  border-top: 1px solid #1f1f1f;
+  color: #aaa;
+  font-size: 0.88rem;
+}
+
+footer a {
+  color: var(--cyan);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--gold);
+}
+
+/* ── Responsive ── */
+@media (min-width: 768px) {
+  .hero {
+    padding: 6rem 2rem 5rem;
+    text-align: left;
+  }
+
+  .hero .profile-img {
+    margin-bottom: 0;
+  }
+}
+
+/* ── Added 11/17/2026: shared page styles ── */
+a { color: var(--cyan); }
+a:hover { color: var(--gold); }
+
+.page-hero { padding: 3.5rem 1.5rem 2.5rem; }
+.page-hero h1 { margin-bottom: 0.25rem; }
+
+.feature-card .meta { color: #aaa; font-size: 0.85rem; margin-bottom: 0.5rem; }
+.feature-card .tech { margin-top: 0.75rem; }
+.feature-card .tech strong { color: var(--cyan); }
+.feature-card ul { color: #ccc; font-size: 0.9rem; padding-left: 1.1rem; margin: 0.5rem 0 0; }
+
+/* Skills table */
+.skills-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.skills-table caption { caption-side: top; color: #aaa; font-size: 0.85rem; font-style: italic; }
+.skills-table th { background: #000; color: var(--cyan); text-transform: uppercase; letter-spacing: 0.06em;
+  font-size: 0.85rem; padding: 0.65rem 1rem; border-bottom: 2px solid var(--cyan); }
+.skills-table td { background: var(--card-bg); color: #ddd; padding: 0.6rem 1rem; border-bottom: 1px solid var(--border-color); }
+.skills-table tbody tr:nth-child(even) td { background: #161616; }
+
+/* Contact form */
+.inquiry-form label { color: var(--cyan); font-size: 0.9rem; letter-spacing: 0.03em; }
+.inquiry-form .form-control, .inquiry-form .form-select {
+  background-color: var(--card-bg); border: 1px solid #333; color: #fff; font-family: "Francois One", sans-serif; }
+.inquiry-form .form-control:focus, .inquiry-form .form-select:focus {
+  background-color: var(--card-bg); color: #fff; border-color: var(--cyan); box-shadow: 0 0 8px rgba(0, 255, 255, 0.25); }
+.inquiry-form .form-select option { background: var(--card-bg); }
+
+.map { width: 100%; height: 320px; border: 0; border-radius: 8px; }
